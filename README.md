@@ -242,4 +242,4 @@ We can replace the URL with ENS name and still get the same schedule UI.
 
 ## Testnet Deployment
 
-The addresses provided in [deployed_addresses.txt](deployed_addresses.txt) correctly point to deployed contracts on the rinkeby testnet.
+The addresses provided in [deployed_addresses.md](deployed_addresses.md) correctly point to deployed contracts on the rinkeby testnet.
