@@ -194,13 +194,13 @@ Because `transfer` and other standard ERC721 are implemented without modificatio
 
 `Reservation.sol` contract does not need emergency stop because `reserve` and `cancel` are the only non-inherited public functions and they are guarded with `onlyOwner`. Hence, only `Calendar.sol` may operate `Reservation.sol` and a paused `Calendar.sol` would free `Reservation.sol` correspondingly.
 
-Refer to [design pattern and decisions](/design_pattern_decisions.md) for more details.
+Refer to [design pattern and decisions](design_pattern_decisions.md) for more details.
 
 # Security Tools / Common Attacks
 
 Both `MeetETH` and `solidity-treemap` CI integrate [`solium`](https://github.com/duaraghav8/Solium) linting, which performs [security static analysis](https://www.npmjs.com/package/solium-plugin-security#list-of-rules).
 
-Automated security check [Mythril](https://github.com/ConsenSys/mythril) has been performed and found no actionable vulnerabilities. Detailed logs can be found at [mythril.log](/mytril.log).
+Automated security check [Mythril](https://github.com/ConsenSys/mythril) has been performed and found no actionable vulnerabilities. Detailed logs can be found at [mythril.log](mytril.log).
 
 No external contract call is performed other than the trusted `Reservation.sol` contract thus there is no **Reentrancy** vulnerability.
 
@@ -239,3 +239,7 @@ truffle exec scripts/ens.js -n ganache2 -a 0x5093eaedcc74bcc56128d74fa300e2ecf40
 ![personal schedule](images/10-choose-calendar-ens.png)
 
 We can replace the URL with ENS name and still get the same schedule UI.
+
+## Testnet Deployment
+
+The addresses provided in [deployed_addresses.txt](deployed_addresses.txt) correctly point to deployed contracts on the rinkeby testnet.
