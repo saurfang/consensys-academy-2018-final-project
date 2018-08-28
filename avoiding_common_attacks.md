@@ -8,6 +8,6 @@ No external contract call is performed other than the trusted `Reservation.sol` 
 
 **Integer Overflow** have been mitigated with the use of [`SafeMath`](https://github.com/OpenZeppelin/openzeppelin-solidity/blob/master/contracts/math/SafeMath.sol) library in `Reservation.sol`. The incrementing token id is the only implemented arithmetic operation in the contract.
 
-Only `cancelAll` function in `Calendar.sol` performs array iteration in either contract. However, the length of iteration is controlled by the arguments thus caller may fit their request under block gas limit by limiting the window of cancellation. This mitigates the **Denial of Service** attack vector.
+Only `cancelAll` function in `Calendar.sol` performs array iteration in either contract. However, the length of iteration is controlled by the arguments thus caller may fit their request under block gas limit by limiting the window of cancellation. In addition, we impose a limit on the duration of a reservation to 8 hours because we don't have other spam protection mechanism in place. This serves as a soft speed bump that user will need to send multiple transactions to squat a calendar. This mitigates the **Denial of Service** attack vector.
 
 There is no **timestamp dependency** in the contract. There is no handling of Ether thus **Force Sending Ether** does not cause any problem.

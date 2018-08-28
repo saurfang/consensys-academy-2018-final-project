@@ -54,7 +54,7 @@ Because `transfer` and other standard ERC721 are implemented without modificatio
 
 **State Machine** does not apply because there is no obvious state change in the current design. If the calendar requires calendar owner to accept a reservation, we would implement a state machine at the token level that marks a reservation as `REQUESTED, CONFIRMED, CANCELLED` etc.
 
-**Speed Bump** has not been implemented as we envision the contract can be used in high frequency scenario. For example, if the contract is deployed in a plasma chain that has very short block time, it could support real time reserving and bettering activity such as bidding and trading for right of the road between vehicles.
+**Speed Bump** has not been implemented as we envision the contract can be used in high frequency scenario. For example, if the contract is deployed in a plasma chain that has very short block time, it could support real time reserving and bettering activity such as bidding and trading for right of the road between vehicles. **However**, we impose a limit on the duration of a reservation to 8 hours because we don't have other spam protection mechanism in place. This serves as a soft speed bump that user will need to send multiple transactions to squat a calendar.
 
 ## Design Decisions
 
