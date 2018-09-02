@@ -12,7 +12,7 @@ Library Code Repository:https://github.com/saurfang/solidity-treemap
 
 MeetETH is a scheduling Dapp that allows user to create tokenized calendar bound to an ethereum account and invite other users to create tokenized reservations on such calendars.
 
-This Dapp serves as a proof of concept for [ERC809](https://github.com/ethereum/EIPs/issues/809), the standard for rentable non-fungible tokens, and [ERC1201](https://github.com/ethereum/EIPs/issues/1201), a corresponding two-tiered token approach. Each ERC809/ERC1201 token represents an ephemeral access to a tokenized (non-)fungible asset. Such asset may be a travel accommodation, some professional service e.g. doctor, or even the right of road. Visit the [MeetETH blog series](TODO: ADD LINK TO BLOG!!!) for more details about why and how we tokenize access.
+This Dapp serves as a proof of concept for [ERC809](https://github.com/ethereum/EIPs/issues/809), the standard for rentable non-fungible tokens, and [ERC1201](https://github.com/ethereum/EIPs/issues/1201), a corresponding two-tiered token approach. Each ERC809/ERC1201 token represents an ephemeral access to a tokenized (non-)fungible asset. Such asset may be a travel accommodation, some professional service e.g. doctor, or even the right of road. Visit the [MeetETH blog series](https://medium.com/@saurfang/erc809-1201-tokenizing-non-fungible-access-abdc5018c49) for more details about why and how we tokenize access.
 
 ## User Story
 
