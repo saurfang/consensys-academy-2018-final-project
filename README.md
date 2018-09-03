@@ -247,9 +247,3 @@ The addresses provided in [deployed_addresses.md](deployed_addresses.md) correct
 The interactions can be seen below. Note UI changes can be delayed as block needs time to confirm.
 
 ![rinkeby](images/11-rinkeby.gif)
-
-## Project uses IPFS
-
-The website has also been published onto IPFS and can be found at:
-
-You will need to be on Rinkeby network to interact with the contracts.
